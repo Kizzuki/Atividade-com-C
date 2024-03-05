@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void duplicaValor(int *x){
+    *x *=3;
+}
+int main()
+{
+   int numero = 1000;
+   TriplicaValor(&numero);
+   printf("O valor Triplicado do numero é %d", numero);
+    return 0;
+    }
