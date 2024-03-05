@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int numeros [] = {2, 52, 4, 5};
+    int *ponteiroArray = numeros;
+    printf("O primeiro elemento do vetor é %d\n", *ponteiroArray);
+    printf("O segundo elemento de vetor é %d\n", *(ponteiroArray+1));
+    printf("O quinto elemento do vetor é %d\n", *(ponteiroArray+4));
+    
+    return 0;
+}
