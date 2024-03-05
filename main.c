@@ -1,14 +1,23 @@
+/******************************************************************************
 
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    int i, j;
-    printf("informe dois numeros (cada um sendo 0 ou 1");
-    scanf("%d%d", &i, &j);
-    printf("%d AND %d é %d\n", i, j, i && j);
-    printf("%d OR %d é %d\n", i, j, i || j);
+    int numero = 42; //variavel inteira
+    int *ponteiro;  //variavel do tipo ponteiro
+    ponteiro = &numero; 
     
+    printf("Valor original de numero: %d\n", numero);
+    printf("Endereço de memoria variavel numero: %p\n", &numero);
+    printf("Valor apontado pela variavel ponteiro: %d\n", *ponteiro);
+    
+
     return 0;
 }
